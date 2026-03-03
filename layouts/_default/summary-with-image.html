@@ -16,7 +16,12 @@
             {{ .Title }}
             </a>
         </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links gray">
+
+        <time class="f6 mv2 db ttu tracked gray" datetime="{{ .Date.Format "2006-01-02" }}">
+          {{ .Date.Format "Jan 2, 2006" }}
+        </time>
+
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links gray summary-container">
           {{ .Summary }}
         </div>
         {{ with .Params.author | compare.Default .Site.Params.author }}

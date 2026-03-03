@@ -18,3 +18,26 @@
 .nested-links a{
   overflow-wrap: break-word;
 }
+
+/* Hide code blocks, images, videos and iframes in summaries */
+.summary-container pre, 
+
+.summary-container code,
+.summary-container img,
+.summary-container video,
+.summary-container iframe {
+  display: none !important;
+}
+
+.summary-container {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.nested-copy-line-height img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 6px;
+}

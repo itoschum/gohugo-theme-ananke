@@ -1,17 +1,17 @@
 pre, .pre  {
   overflow-x: auto;
   overflow-y: hidden;
-  overflow:   scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 
 pre  code {
   display: block;
-  padding: 1.5em 1.5em;
+  padding: 1.3rem;
   white-space: pre;
   font-size: .875rem;
-  line-height: 2;
-
+  line-height: 1.5;
+  font-family: 'Fira Code', 'Cascadia Code', monospace;
 }
 
 pre {
@@ -21,4 +21,7 @@ pre {
 
   hyphens: none;
   position: relative;
+
+  border-radius: 6px;
+  margin: 1rem 0;
 }
